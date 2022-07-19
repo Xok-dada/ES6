@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 解构赋值：ES6 允许按照一定的模式从数组和对象中提取值，对变量进行赋值
+        // 1、数组的结构
+        // const F5 = ['pg','sg','sf','pf','c'];
+        // let [yi,er,san,shi,wu] = F5;
+        // console.log(yi);
+        // console.log(er);
+        // console.log(san);
+        // console.log(shi);
+        // console.log(wu);
+
+        // 2、对象的解构
+        const ZHAO = {
+            name:'赵本山',
+            age:'不详',
+            xiaopin:function(){
+                console.log('小品演员');
+            }
+        };
+        let {name,age,xiaopin} = ZHAO;
+        console.log(name);
+        console.log(age);
+        console.log(xiaopin);
+        xiaopin();
+    </script>
+</body>
+</html>
